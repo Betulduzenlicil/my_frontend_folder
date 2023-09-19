@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM-PRACTİSE</title>
+</head>
+<body>
+    <h2>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h2>
+    <form action="../result.html">
+        <fieldset>
+            <legend>Sözleşme Onay</legend>
+            <input type="checkbox" name="onay" id="onay" value="form onaylandı">
+            <label for="onay">Aşağıdaki Bilgilerin Doğruluğunu Kabul Ediyorum ve sözleşmeyi onaylıyorum.</label><br>
+            <input type="submit" value="Formu Kaydet">
+            <input type="reset" value="Formu Temizle">
+        </fieldset>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="gid">Form Güvenlik ID</label></td>
+                        <td><input type="text" name="" id="gid"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ad">Ad</label></td>
+                        <td><input type="text" name="" id="ad" placeholder="Adınızı Giriniz"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="soyad">Soyad</label></td>
+                        <td><input type="text" name="" id="soyad" placeholder="Soyadınızı Giriniz"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Yaş</label></td>
+                        <td><input type="number" name="" id="age"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Mail Adresi</label></td>
+                        <td><input type="email" name="" id="mail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="file">Fotoğraf Ekle</label></td>
+                        <td><input type="file" name="" id="file"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <table>
+                <thead>
+                    <tr> <th colspan="2">Buradaki alanlar Mesleki deneyimi kapsar</th></tr>
+                   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="date">Sektöre giriş tarihi</label>
+                            <td><input type="date"></td></tr>
+                            
+                        </td>
+                        <td>
+                            <label for="deneyim">Sektör Deneyimi</label>
+                        </td>
+
+                            <td>
+                                 <input type="radio" name="" id="deneyim"><label for="deneyim">1-5 yıl</label><br>
+                                <input type="radio" name="" id="deneyim"><label for="deneyim">5-10</label><br>
+                                <input type="radio" name="" id="deneyim"><label for="deneyim">10-15</label><br>
+                                <input type="radio" name="" id="deneyim">
+                            <label for="deneyim">15-20</label>
+                        <br></td>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pdil">Programlama Dilleri</label>
+                        </td>
+                        <td>
+                            <select size="5" name="pdil" id="pdil">
+                                <option value="C#">C#</option>
+                                <option value="">PHP</option>
+                                <option value="">Java</option>
+                                <option value="">Python</option>
+                                <option value="">Javascript</option>
+                                <option value="">Javngo</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea name="copy" id="copy" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <tbody>
+                <tr>
+                    <td><label for="son">Mail Listesine Girmek İstiyorum</label><input type="radio" name="" id="son">
+                    </td><br>
+                    <td>
+                        <label for="son">Mail Listesine Girmek <u>İstemiyorum</u> </label>
+                        <input type="radio" name="" id="son">
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </fieldset>
+
+    </form>
+</body>
+</html>
