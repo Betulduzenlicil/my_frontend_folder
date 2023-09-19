@@ -8,15 +8,40 @@
 <body>
     <h1>FORMLAR</h1>
     <form action="">
+        <!-- name -->
         <section>
-            <label for="first-name">Name</label>
+            <label for="first-name">Name:</label>
             <input type="text" id="first-name" name="firstName"  required="">
             
         </section>
+        <br><br>
+        <!-- email -->
         <section>
-            <input type="submit" value="kaydet">
-            <button type="submit">sil</button>
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="Email"  required="" placeholder="email adresi giriniz">
+            
         </section>
+        <br><br>
+        <!-- pasword -->
+        <section>
+            <label for="password">Password:</label>
+            <input type="password" name="paswords" id="password" required="" placeholder="en az 8 karakter giriniz" minlength="8" maxlength="10">
+
+        </section>
+        <br><br>
+        <!-- buttons -->
+      
+        <!-- age -->
+        <section>
+            <label for="age">Age:</label>
+            <input type="number" name="Number" id="age" required="" >
+        </section>
+        <br><br>
+        <section>
+            <input type="submit" value="Kaydet">
+            <button type="reset">Sil</button>
+        </section>
+        <br><br>
     </form>
 </body>
 </html>
