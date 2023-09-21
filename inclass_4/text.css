@@ -1,0 +1,43 @@
+h1{
+    color: blue;
+    text-align: center;
+
+}
+#par1{color: red;
+    text-align: center;
+    text-shadow: 5px 5px 2px blue;
+    column-count: 3;
+    column-rule-color: blue;
+    -webkit-column-count: 3;
+
+}
+#par2{color: brown;
+    text-align: right;
+    direction: rtl;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px black;
+    padding: 10px;
+    background-color: rgb(65, 60, 60);
+
+}
+#par3{color: rgba(201, 29, 149, 0.6);
+    text-align: justify;
+    text-decoration: underline;
+
+}
+#par4{color: hsl(0, 100%, 50%);
+
+}
+#par5{color: fuchsia;
+    text-decoration: overline line-through;
+
+}
+#par6{color: white;
+    background-color: black;
+    padding: 5px;
+    text-indent: 1rem;
+    letter-spacing: 5px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+}
