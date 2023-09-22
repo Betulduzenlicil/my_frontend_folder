@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 nav{
-    background-color: #332929;
+    background-color: #1b1b1b77;
     width: 100%;
     padding: 10px 0;
     position: fixed;
@@ -110,4 +110,17 @@ background: #fff;
 color: black;
 transform: scale(1.1);
 transition: all 0.3s;
+box-shadow:2px 2px 2px #d19393 ;
+}
+.center .btns button:last-child{
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.center .btns button:last-child:hover{
+background: #d19393;
+color: #fff;
+transform: scale(1.1);
+transition: all 0.3s;
+box-shadow:2px 2px 2px #fff ;
 }
