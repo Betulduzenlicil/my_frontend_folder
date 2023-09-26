@@ -32,6 +32,7 @@ body::before{
     font-size: 24px;
     color: white;
     width: 450px;
+    height: 80vh;
     background-color: #b17617;
     border-radius: 5px;
     padding: 40px;
