@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 30px;
+}
+body{
+    height: 30vh;
+}
+.abs{
+    background-color: chocolate;
+    /* width: 500px; */
+    /* width: 4in; */
+    width: 10cm;
+}
+.div2{
+    background-color: blueviolet;
+    width: 50%;
+    height: 300px;
+}
+.div3{
+    background-color: brown;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.div4{
+    background-color: yellow;
+    width: 50vw; 
+}
+/* tarayıcının görünen kısmının %50 ı kadar görünür div4 */
+
+.div5{font-size: 25px;
+    
+}
+.div6{
+font-size: 2em;
+}
+.div7{
+font-size: 3em;
+}
+.div8{
+font-size: 25px;
+}
+.div9{
+font-size: 2rem;
+}
+.div10{
+/* font-size: 3rem; */
+font-size: 4rem;
+}
