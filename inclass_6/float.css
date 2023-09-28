@@ -1,0 +1,17 @@
+.img-float{
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.par1{
+    background-color: green;
+}
+/* .clear{
+    clear: both;
+} */
+.par2{
+    clear: left;
+    background-color: aqua;
+}
