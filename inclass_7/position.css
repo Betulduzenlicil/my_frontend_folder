@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,83,1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+  width: 100%;
+}
+
+main{
+ width: 100%;
+ 
+ 
+}
+
+h1{
+  font-family: 'Rubik Vinyl', cursive;
+  font-size: 80px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 3px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  /* height: 95px; */
+  min-height: auto;
+  min-width: auto;
+  width: 80%;
+  
+}
+
+.card{
+  background-color: rgba(255, 255, 255, 0.308);
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.3);
+  /* border: 2px solid #ffff; */
+  border-radius: 15px;
+  /* height: 280px; */
+  height: 340px;
+  width: 90%;
+  margin: 20px 10px;
+  padding: 10px 10px;
+  min-height: auto;
+  min-width: auto;
+  display: block;
+  /* margin-left: 75px; */
+}
+
+
+  
+  h3{
+    font-family: 'EB Garamond', serif;
+    color:#F4A460 ;
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffff;
+    display: inline-block;
+    text-align: justify;
+    text-indent: 16px;
+    width: 60%;
+   
+  }
+
+ img{
+  float: left;
+  display: block;
+  margin-right: 20px;
+  /* overflow: clip; */
+  width: 30%;
+  height: 245px;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+img:hover{
+  width: 35%;
+  height: 265px;
+}
+button{
+  float: right;
+  background-color: #e87007;
+  margin-top: 15px;
+  padding: 10px 10px ;
+  border: 1px solid #e87007;
+  border-radius: 8px;
+ 
+ 
+}
+button a{
+  text-decoration: none;
+  color: #ffff;
+}
+button:hover{
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+
+}
