@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.box{
+    width: 20rem;
+    height: 20rem;
+    font-size: 1.4rem;
+}
+.static{
+    background-color: pink;
+    z-index: 1;
+}
+.relative{
+    background-color: rgba(137, 43, 226, 0.493);
+    position: relative;
+    top: -5rem;
+    bottom: 0;
+    right: 0;
+    left: 3rem;
+    z-index: 0;
+}

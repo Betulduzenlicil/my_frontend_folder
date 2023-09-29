@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+header{
+    background-color: lightpink;
+    padding: 3rem;
+    font-size: 2rem;
+}
+nav.sticky{
+    background-color: rgb(167, 167, 23);
+    padding: 1rem;
+
+}
