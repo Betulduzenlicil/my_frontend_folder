@@ -90,3 +90,18 @@ const tanimsiz = undefined
 const bos = ""
 const sayiDegil = NaN
 const sifir = 0
+
+
+const sayi= +prompt("enter a number")
+let sonuc = "";
+
+if (sayi > 0) {
+  sonuc = "Positif";
+} 
+else if (sayi < 0) {
+  sonuc = "Negatif";
+} 
+else {
+  sonuc = `sayiniz ${sayi} dir`;
+}
+console.log(sonuc);
