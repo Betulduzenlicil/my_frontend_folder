@@ -34,14 +34,59 @@ console.log(tarih);
 // Math.random(); //* 0 ve 1 arasında rasgele sayi uretir.
 
 
-const Sayım= +prompt("enter a number");
-console.log(Sayım);
-const birlerBas=Sayım%10
+// const Sayım= +prompt("enter a number");
+// console.log(Sayım);
+// const birlerBas=Sayım%10
 // console.log(birlerBas);
-const onlarBas= (Sayım%100)/10
+// const onlarBas= (Sayım%100)/10
 // console.log(onlarBas);
-const yüzlerBas= Sayım/100
+// const yüzlerBas= Sayım/100
 // console.log(yüzlerBas);
-console.log(`yüzlerBas:${Math.trunc(yüzlerBas)}`);
-console.log(`onlarBas:${Math.trunc(onlarBas)}`);
-console.log(`birlerBas:${Math.trunc(birlerBas)}`);
+// console.log(`yüzlerBas:${Math.trunc(yüzlerBas)}`);
+// console.log(`onlarBas:${Math.trunc(onlarBas)}`);
+// console.log(`birlerBas:${Math.trunc(birlerBas)}`);
+// * ================================================
+// *          KARSILASTIRMA OPERATORLERI
+// * ================================================
+
+console.log(5 == "5") //? true
+console.log(5 === "5") //? false
+console.log("5" === "5") //? true
+
+console.log(4 != 5) //? true
+console.log(4 != "4") //? false
+console.log(4 !== "4") //? true
+
+console.log(4 > 4) //? false
+console.log(4 >= 4) //? true
+console.log(4 <= 6) //? true
+
+// * ================================================
+// *            MANTIKSAL OPERATORLER
+// * ================================================
+const age=18
+const gender = "E"
+if (age>=18 && gender =="E") {
+    console.log("You can become a soldier");
+}
+else
+    console.log("You can not become a soldier");
+// * ================================================
+// *            MANTIKSAL OPERATORLER
+// * ================================================
+console.log("** LOGIC ***")
+const d1 = true
+const d2 = false
+
+console.log(d1 && d2) //? false
+console.log(d1 || d2 || false || false) //? true
+
+console.log(!d2) //? true
+
+
+//? Javascripte surekli falsy olan 6 deger bulunmaktadir.
+const nal = null
+const tanimsiz = undefined
+const bos = ""
+const sayiDegil = NaN
+const sifir = 0
