@@ -8,11 +8,11 @@ body{ background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,83,1) 35%,
   width: 100%;
 }
 
-main{
+/* main{
  width: 100%;
  
  
-}
+} */
 
 h1{
   font-family: 'Rubik Vinyl', cursive;
@@ -40,9 +40,8 @@ h1{
   margin: 20px 10px;
   padding: 10px 10px;
   min-height: auto;
-  min-width: auto;
-  display: block;
-  /* margin-left: 75px; */
+  min-width: auto; 
+  
 }
 
 
@@ -66,7 +65,9 @@ h1{
     width: 60%;
    
   }
-
+/* .img{
+  float: left; */
+/* } */
  img{
   float: left;
   display: block;
@@ -102,3 +103,34 @@ button:hover{
   height: 40px;
 
 }
+/* section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  flex: 0 0 calc(50% - 10px); /* İki makalenin yarı genişliği */
+  /* margin: 5px;
+} */ 
+
+/* Ekran küçülünce alt alta geçer */
+/* @media screen and (max-width: 768px) {
+  article {
+      flex: 0 0 calc(100% - 10px); /* Tam genişlik */
+  /* }
+}  */
+
+/* Yazıların taşmasını engellemek için */
+/* .text{
+  float: right;
+  overflow: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Yazı fazla uzunsa üç nokta ile kısaltır */
+/* } */ 
+
+
+
+
+
+
