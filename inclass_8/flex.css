@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 6px solid black;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.kutu{
+    height: 100px;
+    width: 150px;
+}
+.kutu1{
+    background-color: blue;
+}
+
+.kutu2{
+    background-color: rgb(255, 217, 0);
+}
+
+.kutu3{
+    background-color: rgb(255, 0, 0);
+}
+
+.kutu4{
+    background-color: rgb(255, 0, 242);
+}
+.kutu5{
+    background-color: rgb(13, 255, 0);
+}
+
+
+
+.kutu6{
+    background-color: rgb(255, 0, 242);
+}
+.kutu7{
+    background-color: rgb(255, 153, 0);
+}
+.kutu8{
+    background-color: rgb(251, 0, 255);
+}
