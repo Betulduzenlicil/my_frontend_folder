@@ -70,3 +70,7 @@ function oddOrEven (a) {
 oddOrEven(num1)
 console.log(`${num1}:  ${result}`);
 
+
+
+
+

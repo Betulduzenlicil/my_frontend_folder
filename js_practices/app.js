@@ -72,4 +72,10 @@ console.log(`Benim yaşım ${my_age} senin yaşın ${your_age}`);
       console.log(toplam)
     }
     
+//ÖRNEK
+console.log("guess number");
 
+let sayı= Math.round(Math.random()*100)
+
+let hak=5
+let tahmin= +prompt("enter a number")
