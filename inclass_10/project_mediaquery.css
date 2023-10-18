@@ -1,0 +1,44 @@
+@import"./theme.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: var(--white);
+    font-family: var(--ff-roboto);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header button{
+    padding: 2rem;
+    background-color: blueviolet;
+}
+header img{
+    width: 200px;
+}
+
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    header button{
+        padding: 1rem;
+        background-color: cadetblue;
+    }
+}
+
+@media  screen and (min-width:601px) and (max-width:900px){
+    body{
+        background-color: yellowgreen;
+    }
+}

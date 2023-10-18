@@ -1,0 +1,22 @@
+:root{
+    --baslıkRengi:rgb(156, 83, 80);
+    --yazıRengi:rgb(10,150,200);
+    --standartOlcu:1rem;
+    --borderDegeri:0.5rem;
+    --ff-coriur:"Courier New", monospace;
+    --fs-3x1:3rem
+}
+h1{
+    color: var(--baslıkRengi);
+    font-size:calc(var(--standartOlcu)*3);
+    font-family:var(--ff-coriur) ;
+}
+button{
+    background-color: var(--baslıkRengi);
+    padding: var(--standartOlcu);
+    border: none;
+}
+p{
+    font-family: var(--ff-coriur);
+    font-size:var(--fs-3x1) ;
+}
