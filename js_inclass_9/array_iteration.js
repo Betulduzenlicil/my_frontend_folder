@@ -1,35 +1,109 @@
-console.log("*********FOR EACH**********");
 
-arr=[4,2,6,7]
+const arr1= [4,2,1,3]
+let sum1=0
+for (let i=0; i < arr1.length; i++ ) {
+  
+    sum1+=arr1[i]
+}
+console.log(sum1);
+//**************************** */
+const notlar=[20,55,100,89,32]
+let sum2=0
+for (let i=0; i < notlar.length; i++ ) {
+  
+    sum2+=notlar[i]
+    console.log(sum2);
+}
+console.log(sum2);
+///*********************** */
+const ellidenKucuk=[]
+const ellidenBuyuk=[]
+// for (let i=0; i < notlar.length; i++){
+//     notlar[i]<50?ellidenKucuk.push(notlar[i]):ellidenBuyuk.push(notlar[i])
+// }
+// console.log(ellidenKucuk);
+// console.log(ellidenBuyuk);
+//************************************** */
+let arr=[4,2,6,7]
 arr.forEach((a)=>console.log(a*2));
 
+//!============ FOR IN=========
+for (const i in notlar) {
+    if (notlar[i]<50){
+        ellidenKucuk.push(notlar[i])
+    }else{
+        ellidenBuyuk.push(notlar[i])
+    }
+        
+    }
+console.log(ellidenBuyuk);
+console.log(ellidenKucuk);
+console.log(notlar);
 
+//!00000000000000000000000000000000000000
+
+//!!************ FOR OF  **************
 //?-------------- ÖRNEK -------------------
 //?  Dizideki herbir fiyati konsola bastiriniz.
 
-//! FOR OF
 const prices = [250, 150, 300, 500]
 
 for (let price of prices) {
     console.log(price);
 }
+//****************************
+const notlar1=[20,55,100,89,32]
+for (not of notlar1) {
+     (not<50? ellidenKucuk.push(not):ellidenBuyuk.push(not)) 
+    
+}
+console.log(ellidenKucuk);
+console.log(ellidenBuyuk);
+//***************************** */
 
-//! FOR EACH
-prices.forEach((price)=>console.log(price*1.1))
+//? ÖRNEK STUDENTS DİZİSİNDE ÖĞRENCİ İSİMLERİ SAKLANMAKTADIR. öĞRENCİLERİ ARAYACAK VE ARANILAN ÖĞRENCİDEN KAÇ TANE OLDUĞUNU YAZACAK ÖĞRENCİ BULUNAMADI İSE ÖĞRENCİ BULUNAMADI YAZSIN
+
+
+const students=["ahmet", "mehmet", "ismet", "saffet", "ahmet", "saffet"]
+ogrenciBul=(ad)=>{
+let sayac=0
+for (let ogrenci of students) {
+   ogrenci===ad && sayac++ 
+}
+return  sayac===0? `${ad} bulunamamıştır`: `${ad}, ${sayac} adet bulunmuştur`
+
+}
+console.log(ogrenciBul("ahmet"));
+console.log(ogrenciBul("saffet"));
+console.log(ogrenciBul("mehmet"));
+console.log(ogrenciBul("canan"));
+
+
+//!===============FOR EACH=============
+const prices1 = [250, 150, 300, 500,600]
+for (let price of prices1) {
+    console.log(price);
+    
+}
+
+
+prices1.forEach((price)=>console.log(price*1.1))
+
 
 //* 2 PARAMETRELİ HALİ
 prices.forEach((price,index)=>console.log("DEGER", price, "SIRA",index))
 
 //* 3 PARAMETRELİ
-prices.forEach((p,i,arr)=>{
+prices1.forEach((p,i,arr)=>{
     if (arr[i]<270) {
        arr[i]=p*1.1
     }
 })
-console.log(prices);
+console.log(prices1);
+
 //?  fiyatlar toplamı
 let sum=0
-prices.forEach((price)=> (sum +=price));
+prices1.forEach((price)=> (sum +=price));
 console.log("SUM", sum);
 
 //********************** MAP  *****************  */
@@ -53,7 +127,7 @@ let upperName=[]
 names.forEach((n)=>upperName.push(n.toUpperCase()))
 console.log(upperName);
 
-
+//************************************** */
 const euro=29.8
 const dolar=27.97
 const tlPrices=[100,150,100,50,80]
@@ -65,6 +139,21 @@ console.log(dolarPrices);
 const euroPrices=tlPrices.map((tl)=>Number((tl/euro).toFixed(2)))
 console.log(euroPrices);
 
+const zamlıDeger=tlPrices.map((p)=>
+{
+    if (p>100) {
+        return (p*1.15).toFixed(2)
+        
+    }else{
+        return (p*1.1).toFixed(2)
+    }
+})
+console.log(zamlıDeger);
+
+
+
+
+
 
 //* =======================================
 //*             FILTER METHOD
@@ -75,7 +164,8 @@ const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000]
 const newSalaries=salaries.filter((salary)=>salary >= 8000 && salary < 10000)
 console.log(newSalaries);
 
-
+const dokuzBindenAz= salaries.filter((m)=>m<9000).map((m)=>m*1.5)
+console.log(dokuzBindenAz);
 
 //*********************REDUCE************ */
 
@@ -109,7 +199,7 @@ console.log(myArr.reduce((acc,val)=>acc-val,0));
 
 // const salari= [10000, 15000, 9000, 20000]
 // let result
-// const mulOfSalari=salari.reduce((mul,sal,i)=>{
+// const mulOfSalari=salari.reduce((mul,sal,1)=>{
 //     result= `${i} ${mul *sal}`
 //     console.log(result);
 //     return  mul *sal
