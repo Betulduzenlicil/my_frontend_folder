@@ -1,65 +1,3 @@
-// const note = {
-//     id: 1,
-//     title: 'My first note',
-//     date: '01/01/1970',
-//     author: {
-//       firstName: 'John',
-//       lastName: 'Doe',
-//       email: 'johndoe@example.com',
-//     },
-//   };
-//   const { id, title, date, author: { firstName, lastName, email } } = note;
-//   console.log(`${firstName} ${lastName}`, id, title, date, email);
-
-
-
-
-// const date = [1970, 4, 20];
-// traditional way
-// const year = date[0];
-// const month = date[1];
-// const day = date[2];
-
-// destructuring
-// const [year, month, day] = date;
-// console.log(day, month, year); // 20 4 1970
-// skip the second item
-// const [year2, , day2] = date;
-// console.log(day2, year2);
-
-
-// const note = {
-//     id: 1,
-//     title: 'My first note',
-//     date: '25/04/1977',
-//   };
-  
-  // Using forEach
-//   Object.entries(note).forEach(([key, value]) => {
-//     console.log(`${key}: ${value}`);
-//   });
-
-//   for (let [key, value] of Object.entries(note)) {
-//     console.log(`${key}: ${value}`);
-//   }
-
-//   const note = {
-//     title: 'My first note',
-//     author: {
-//       firstName: 'Sherlock',
-//       lastName: 'Holmes',
-//     },
-//     tags: ['personal', 'writing', 'investigations'],
-//   };
-//   // Then destructure the object, while also setting a new date variable with the default of new Date():
-  
-//   const {
-//     title,
-//     date = new Date(),
-//     author: { firstName },
-//     tags: [personalTag, writingTag],
-//   } = note;
-//   console.log(date);
 
 // console.log("**NEW OPERATORS**");
 
@@ -104,7 +42,7 @@ const insanlar = {
     },
   }
   console.log("MAAS:", insanlar.kisi1.maas);
-  const {kisi1, kisi2}=insanlar
+  const {kisi1, kisi2}=insanlar   //? level1
   console.log(kisi1);
 
   const {kimlikNo}=kisi1
@@ -112,7 +50,7 @@ const insanlar = {
 
 const { kimlikNo: kisi1Kimlik, adi: kisi1Adi, soyadi: kisi1Soyadi } = kisi1 //?Level2
 const { kimlikNo: kisi2Kimlik, adi: kisi2Adi, soyadi: kisi2Soyadi } = kisi2
-console.log(kisi2Kimlik)
+console.log(kisi2Kimlik) //44234567890
 
 //!2. yontem
 const {
@@ -142,13 +80,13 @@ const team = [
       age: 40,
     },
   ]
-
+//* klasik yöntem
 team.forEach((t)=>{
     console.log("NAME:",t.name, "SURNAME:",t.surname, "AGE:",t.age, "JOB:",t.job);
 })
 
 console.log("**** DEST ****")
-//? Destr
+//*/ Destr
 team.forEach((person) => {
     const {name, surname, age, job}=person
   console.log("NAME:", name)
@@ -186,7 +124,7 @@ const data={
     stock:100
 }
 
-const productPrint=()=>{
+const productPrint=(data)=>{
     
 console.log(`${data.brand}- ${data.product}: ${data.stock}`);
 }

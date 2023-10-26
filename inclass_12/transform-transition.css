@@ -1,0 +1,102 @@
+.yaz{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 50vw;
+
+}
+.yaz1{
+    background-color: darkcyan;
+    transform: rotateX(180deg);
+}
+.yaz2{
+    background-color: rgb(25, 0, 139);
+    transform:rotateY(180deg)
+}
+.yaz3{
+    background-color: rgb(102, 139, 0);
+    transform: rotate(30deg);
+    /* transform-origin:left ;
+    transform-origin:top; */
+}
+
+.yaz4{
+    background-color: rgb(139, 0, 0);
+    transform: scaleX(1.5);
+}
+.yaz5{
+    background-color: rgb(181, 189, 160);
+    transform: scaleY(2.5) skew(20deg, 30deg);
+}
+.yaz6{
+    background-color: rgb(139, 0, 104);
+   
+}
+
+.yaz6:active{
+    background-color: aqua;
+    transform: scale(3) rotate(40deg);
+   
+}
+img{
+    transform: skew(20deg, 20deg);
+}
+
+.box{
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+}
+.x{
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 2s;
+    /* transition-delay: 1s; */
+    transition-timing-function:cubic-bezier(0.08, 0.82, 1, 1.04);
+   
+}
+.x:active{
+    transform: translateX(150px);
+    background-color: yellowgreen;
+}
+.y{
+    background-color: olivedrab;
+    transform: translateY(0);
+    transition: width  2s ease-in-out;
+}
+.y:active{
+    width: 300px;
+    background-color: orange;
+    height: -150px;
+}
+.xy{
+    background-color: magenta;
+    transition: height 2s ease-in-out;
+}
+.xy:active{
+    background-color: magenta;
+    height: 300px;
+    transform: translate(150px, 50px) scale(3);
+}
+
+.xy:active::after{
+    content: "betul cil";
+    display: block;
+}
+.btn-div{
+    text-align: center;
+}
+.btn{
+    background-color: aqua;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+
+.btn:hover{
+    background-color: crimson;
+    color: white;
+    transform: scale(50%);
+}
