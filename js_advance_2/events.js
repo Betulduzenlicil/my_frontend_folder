@@ -50,7 +50,7 @@ input.addEventListener("keyup", (e)=>{
     if(e.code==="Enter"){
         addButon.click()
     }
-    if(e.code==="Backslash"){
+    if(e.code==="Backspace"){
          //todo: liste elementinin en son elementi silinecek
     }
        
